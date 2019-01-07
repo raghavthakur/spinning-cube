@@ -26,6 +26,14 @@
 			scene.add(cube);	// added to coord. (0,0,0)
 
 			camera.position.z = 5;	// move camera to prevent being on top of cube object
+
+			// render the scene in the browser
+			function animate() {
+				requestAnimationFrame(animate);
+				renerer.render(scnee, camera);
+			}
+
+			animate();
 		</script>
 	</body>
 </html>
